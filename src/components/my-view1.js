@@ -124,6 +124,15 @@ class MyView1 extends PageViewElement {
                 Confluence
               </wired-link>
             </div>
+            <div class="flex-container">
+              <wired-fab> <mwc-icon>build</mwc-icon> </wired-fab>
+              <wired-link
+                href="http://mock.internal.paraboly.com/"
+                target="_blank"
+              >
+                DuckRails
+              </wired-link>
+            </div>
             
           </div>
         </wired-card>
@@ -181,7 +190,7 @@ class MyView1 extends PageViewElement {
                 elevation="4"
                 src="../../images/team/nurgazi.png"
               ></wired-image>
-              <h5>Nurgazi: The Mafia</h5>
+              <h5>Nurgazy: The Mafia</h5>
             </div>
             <div class="flex-container">
               <wired-image
