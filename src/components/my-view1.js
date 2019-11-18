@@ -133,6 +133,15 @@ class MyView1 extends PageViewElement {
                 DuckRails
               </wired-link>
             </div>
+            <div class="flex-container">
+              <wired-fab> <mwc-icon>build</mwc-icon> </wired-fab>
+              <wired-link
+                href="http://wikijs.internal.paraboly.com/"
+                target="_blank"
+              >
+                WikiJS
+              </wired-link>
+            </div>
             
           </div>
         </wired-card>
