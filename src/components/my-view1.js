@@ -155,7 +155,7 @@ class MyView1 extends PageViewElement {
             <div class="flex-container">
               <wired-image
                 elevation="4"
-                src="../../images/team/emre_2.png"
+                src="../../images/team/emre.png"
               ></wired-image>
               <h5>Emre: The Crazy</h5>
             </div>
@@ -206,7 +206,7 @@ class MyView1 extends PageViewElement {
                 elevation="4"
                 src="../../images/team/ege.png"
               ></wired-image>
-              <h5>Ege: The King Slayer</h5>
+              <h5>Ege: The Black Sabahat</h5>
             </div>
             <div class="flex-container">
               <wired-image
