@@ -28,7 +28,7 @@ class MyView1 extends PageViewElement {
       <section>
         <wired-card elevation="4">
           <div class="title">
-            <h3>Applications</h3>
+            <h3>🕹 Applications</h3>
           </div>
           <div class="content">
             <div class="flex-container">
@@ -67,16 +67,36 @@ class MyView1 extends PageViewElement {
       <section>
         <wired-card elevation="4">
           <div class="title">
-            <h3>Project Management</h3>
+            <h3>
+              ⚒️ Tools
+            </h3>
           </div>
           <div class="content">
             <div class="flex-container">
-              <wired-fab> <mwc-icon>ballot</mwc-icon> </wired-fab>
+              <wired-fab> <mwc-icon>collections_bookmark</mwc-icon> </wired-fab>
               <wired-link
-                href="https://www.meistertask.com/app"
+                href="https://paraboly.atlassian.net/wiki/"
                 target="_blank"
               >
-                MeisterTask
+                Confluence
+              </wired-link>
+            </div>
+            <div class="flex-container">
+              <wired-fab> <mwc-icon>collections_bookmark</mwc-icon> </wired-fab>
+              <wired-link
+                href="https://drive.google.com/drive/u/1/folders/0ByaTXw2OI-4rUVB0bFg4Tk5CcU0"
+                target="_blank"
+              >
+                Drive
+              </wired-link>
+            </div>
+            <div class="flex-container">
+              <wired-fab> <mwc-icon>collections_bookmark</mwc-icon> </wired-fab>
+              <wired-link
+                href="https://paraboly.atlassian.net/jira"
+                target="_blank"
+              >
+                Jira
               </wired-link>
             </div>
             <div class="flex-container">
@@ -89,15 +109,6 @@ class MyView1 extends PageViewElement {
               </wired-link>
             </div>
             <div class="flex-container">
-              <wired-fab> <mwc-icon>event_note</mwc-icon> </wired-fab>
-              <wired-link
-                href="http://youtrack.internal.paraboly.com/dashboard"
-                target="_blank"
-              >
-                YouTrack
-              </wired-link>
-            </div>
-            <div class="flex-container">
               <wired-fab> <mwc-icon>chat</mwc-icon> </wired-fab>
               <wired-link
                 href="https://parabolyazilim.slack.com/apps"
@@ -106,50 +117,13 @@ class MyView1 extends PageViewElement {
                 Slack
               </wired-link>
             </div>
-            <div class="flex-container">
-              <wired-fab> <mwc-icon>collections_bookmark</mwc-icon> </wired-fab>
-              <wired-link
-                href="https://drive.google.com/drive/u/1/folders/0ByaTXw2OI-4rUVB0bFg4Tk5CcU0"
-                target="_blank"
-              >
-                Documents
-              </wired-link>
-            </div>
-            <div class="flex-container">
-              <wired-fab> <mwc-icon>collections_bookmark</mwc-icon> </wired-fab>
-              <wired-link
-                href="https://parabol-internal-blog.atlassian.net/wiki/"
-                target="_blank"
-              >
-                Confluence
-              </wired-link>
-            </div>
-            <div class="flex-container">
-              <wired-fab> <mwc-icon>build</mwc-icon> </wired-fab>
-              <wired-link
-                href="http://mock.internal.paraboly.com/"
-                target="_blank"
-              >
-                DuckRails
-              </wired-link>
-            </div>
-            <div class="flex-container">
-              <wired-fab> <mwc-icon>build</mwc-icon> </wired-fab>
-              <wired-link
-                href="http://wikijs.internal.paraboly.com/"
-                target="_blank"
-              >
-                WikiJS
-              </wired-link>
-            </div>
-            
           </div>
         </wired-card>
       </section>
       <section>
         <wired-card elevation="3" style="max-width: 1200px;">
           <div class="title">
-            <h3>Team</h3>
+            <h3>⛹️ Team</h3>
           </div>
           <div class="content">
             <div class="flex-container">
@@ -215,6 +189,48 @@ class MyView1 extends PageViewElement {
               ></wired-image>
               <h5>Kuray: The Beard</h5>
             </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Elif: The ...</h5>
+            </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Tarik: The ...</h5>
+            </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Sevval: The ...</h5>
+            </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Tugce: The ...</h5>
+            </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Mert: The ...</h5>
+            </div>
+            <div class="flex-container">
+              <wired-image
+                elevation="4"
+                src="../../images/team/circle_metis_logo.png"
+              ></wired-image>
+              <h5>Busra: The ...</h5>
+            </div>
           </div>
         </wired-card>
       </section>
@@ -234,4 +250,4 @@ class MyView1 extends PageViewElement {
   }
 }
 
-window.customElements.define("my-view1", MyView1);
+window.customElements.define("main-view", MyView1);

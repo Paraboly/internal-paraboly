@@ -28,7 +28,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <body>
     <test-fixture id="view1">
       <template>
-        <my-view1 active></my-view1>
+        <main-view active></main-view>
       </template>
     </test-fixture>
     <test-fixture id="view2">
@@ -51,13 +51,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       import '@polymer/test-fixture';
       import 'axe-core/axe.min.js';
       import {axeReport} from 'pwa-helpers/axe-report.js';
-      import '../../src/components/my-view1.js';
+      import '../../src/components/main-view.js';
       import '../../src/components/my-view2.js';
       import '../../src/components/my-view3.js';
       import '../../src/components/my-view404.js';
 
       suite('views a11y tests', function() {
-        test('my-view1', function() {
+        test('main-view', function() {
           const el = fixture('view1');
           return axeReport(el);
         });

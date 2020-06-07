@@ -70,6 +70,7 @@ class MyApp extends connect(store)(LitElement) {
           top: 0;
           left: 0;
           width: 100%;
+          z-index: 2;
           text-align: center;
           background-color: var(--app-header-background-color);
           color: var(--app-header-text-color);
@@ -215,7 +216,7 @@ class MyApp extends connect(store)(LitElement) {
 
       <!-- Main content -->
       <main role="main" class="main-content">
-        <my-view1 class="page" ?active="${this._page === "view1"}"></my-view1>
+        <main-view class="page" ?active="${this._page === "view1"}"></main-view>
         <my-view404
           class="page"
           ?active="${this._page === "view404"}"
@@ -240,10 +241,10 @@ class MyApp extends connect(store)(LitElement) {
   }
 
   firstUpdated() {
-    installRouter(location =>
+    installRouter((location) =>
       store.dispatch(navigate(decodeURIComponent(location.pathname)))
     );
-    installOfflineWatcher(offline => store.dispatch(updateOffline(offline)));
+    installOfflineWatcher((offline) => store.dispatch(updateOffline(offline)));
     installMediaQueryWatcher(`(min-width: 460px)`, () =>
       store.dispatch(updateDrawerState(false))
     );
